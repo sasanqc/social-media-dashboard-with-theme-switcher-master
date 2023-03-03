@@ -1,0 +1,11 @@
+.overview {
+  &__title {
+    margin-bottom: 2.4rem;
+  }
+  padding-bottom: 7.5rem;
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.4rem;
+  }
+}

@@ -1,0 +1,97 @@
+@use "../abstracts/" as *;
+.social-card {
+  text-align: center;
+  width: 25.5rem;
+  border-radius: 5px;
+  position: relative;
+  background-color: $clr-card-bg-dark;
+  display: flex;
+  flex-direction: column;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 5px;
+    padding-top: 4px;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
+
+  &[data-social="facebook"]::before {
+    background: $clr-primary-facebook;
+  }
+
+  &[data-social="facebook"] {
+    border-top-color: $clr-primary-facebook;
+  }
+  &[data-social="instagram"]::before {
+    background: $clr-primary-instagram;
+  }
+
+  &[data-social="twitter"]::before {
+    background: $clr-primary-twitter;
+  }
+  &[data-social="youtube"]::before {
+    background: $clr-primary-youtube;
+  }
+
+  &[data-social="facebook"] &__id::before {
+    background-image: url(../../images/icon-facebook.svg);
+  }
+  &[data-social="instagram"] &__id::before {
+    background-image: url(../../images/icon-instagram.svg);
+  }
+
+  &[data-social="twitter"] &__id::before {
+    background-image: url(../../images/icon-twitter.svg);
+  }
+  &[data-social="youtube"] &__id::before {
+    background-image: url(../../images/icon-youtube.svg);
+  }
+
+  &__id {
+    margin-top: 3.2rem;
+    color: $clr-text-gray-dark;
+    @include flex-cc;
+    margin-bottom: 2.8rem;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-right: 0.8rem;
+    }
+  }
+
+  &__dir {
+    margin-bottom: 2.4rem;
+    display: inline-block;
+    &[data-dir="up"] {
+      color: $clr-primary-lime-green;
+    }
+    &[data-dir="down"] {
+      color: $clr-primary-bright-red;
+    }
+    &[data-dir]::before {
+      font-size: 0.8rem;
+      margin-right: 3px;
+    }
+    &[data-dir="down"]::before {
+      content: "\25BC";
+    }
+    &[data-dir="up"]::before {
+      content: "\25B2";
+    }
+  }
+  .heading-xl {
+    margin-bottom: 0.9rem;
+  }
+  .body {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: $clr-text-gray-dark;
+    margin-bottom: 2.5rem;
+  }
+}

@@ -1,0 +1,35 @@
+@use "../abstracts/" as *;
+.overview-card {
+  background-color: $clr-card-bg-dark;
+  width: 25.5rem;
+  border-radius: 5px;
+  padding: 2.4rem;
+  & > * {
+    @include flex-bc;
+  }
+  &__event {
+    margin-bottom: 2.4rem;
+    color: $clr-text-gray-dark;
+  }
+  &__up {
+    color: $clr-primary-lime-green;
+    &::before {
+      content: "\25B2";
+    }
+  }
+  &__down {
+    color: $clr-primary-bright-red;
+    &::before {
+      content: "\25BC";
+    }
+  }
+
+  &__down,
+  &__up {
+    @include flex-cc;
+    &::before {
+      margin-right: 3px;
+      font-size: 0.8rem;
+    }
+  }
+}

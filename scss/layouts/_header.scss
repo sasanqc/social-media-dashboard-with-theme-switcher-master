@@ -6,7 +6,29 @@
   align-items: center;
   padding-top: 3.6rem;
   margin-bottom: 4.6rem;
-  .heading-xs {
-    color: $clr-text-gray-dark;
+
+  &__toggle {
+    @include flex-cc;
+
+    .heading-xs {
+      color: $clr-text-gray-dark;
+      margin-right: 1.3rem;
+    }
+  }
+  @include respond(phone) {
+    flex-direction: column;
+    align-items: unset;
+    &__text-box {
+      margin-bottom: 3rem;
+    }
+    &__toggle {
+      justify-content: space-between;
+      padding-top: 2rem;
+      border-top: 2px solid $clr-card-bg-dark;
+
+      .heading-xs {
+        margin-right: unset;
+      }
+    }
   }
 }

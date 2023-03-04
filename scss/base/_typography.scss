@@ -1,5 +1,5 @@
+@use "../abstracts/" as *;
 //h1
-
 .heading-xl,
 .heading-l,
 .heading-m,
@@ -13,26 +13,46 @@
   font-size: 5.6rem;
   line-height: 4.8rem;
   letter-spacing: -2px;
+  @include respond(phone) {
+    font-size: 7rem;
+    line-height: 6rem;
+  }
 }
 //h2
 .heading-l {
   font-size: 3.2rem;
   line-height: 3.9rem;
+  @include respond(phone) {
+    font-size: 4rem;
+    line-height: 4.875rem;
+  }
 }
 //h3
 .heading-m {
   font-size: 2.8rem;
   line-height: 3.4rem;
+  @include respond(phone) {
+    font-size: 3rem;
+    line-height: 3.62rem;
+  }
 }
 //h4
 .heading-s {
   font-size: 2.4rem;
   line-height: 2.9rem;
+  @include respond(phone) {
+    font-size: 3rem;
+    line-height: 9.66rem;
+  }
 }
 //h5
 .heading-xs {
   font-size: 1.4rem;
   line-height: 1.7rem;
+  @include respond(phone) {
+    font-size: 1.75rem;
+    line-height: 2.125rem;
+  }
 }
 
 //p
@@ -40,10 +60,18 @@
   font-weight: 400;
   font-size: 1.2rem;
   line-height: 1.5rem;
+  @include respond(phone) {
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+  }
 }
 
 //p
 .body-b {
   font-size: 1.2rem;
   line-height: 1.5rem;
+  @include respond(phone) {
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+  }
 }

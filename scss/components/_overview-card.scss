@@ -32,4 +32,8 @@
       font-size: 0.8rem;
     }
   }
+  @include respond(phone) {
+    width: 100%;
+    padding: 3rem;
+  }
 }

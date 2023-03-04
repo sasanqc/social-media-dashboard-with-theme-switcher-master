@@ -5,4 +5,7 @@
   background-color: $clr-bg-dark;
   min-height: 100vh;
   color: $clr-text-dark;
+  @include respond(phone) {
+    padding: 0 3rem;
+  }
 }

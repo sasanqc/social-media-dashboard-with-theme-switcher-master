@@ -1,0 +1,32 @@
+@use "../abstracts/" as *;
+.switch-btn {
+  input[type="checkbox"] {
+    visibility: hidden;
+    position: absolute;
+  }
+  background: $clr-toggle-dark;
+  width: 48px;
+  height: 24px;
+  border-radius: 12px;
+  position: relative;
+  &::before {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    border-radius: 50%;
+    background-color: $clr-bg-dark;
+    transition: all 0.3s;
+  }
+  &:has(input[type="checkbox"]:checked) {
+    background: $clr-toggle-light;
+    &::before {
+      left: 26px;
+      border-radius: 50%;
+      background-color: $clr-bg-light;
+    }
+  }
+}

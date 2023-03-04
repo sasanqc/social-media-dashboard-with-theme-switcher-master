@@ -94,4 +94,8 @@
     color: $clr-text-gray-dark;
     margin-bottom: 2.5rem;
   }
+
+  @include respond(phone) {
+    width: 100%;
+  }
 }

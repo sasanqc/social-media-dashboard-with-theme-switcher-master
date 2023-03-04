@@ -17,6 +17,23 @@ html {
 }
 
 body {
-  font-family: $font-family;
-  font-size: $fs-default;
+  font-family: var(--font-family);
+  font-size: var(--fs-default);
+
+  &.dark {
+    --clr-bg: var(--clr-bg-dark);
+    --clr-top-bg-pattern: var(--clr-top-bg-pattern-dark);
+    --clr-card-bg: var(--clr-card-bg-dark);
+    --clr-text-gray: var(--clr-text-gray-dark);
+    --clr-text: var(--clr-text-dark);
+    --clr-toggle: var(--clr-toggle-dark);
+  }
+  &.light {
+    --clr-bg: var(--clr-bg-light);
+    --clr-top-bg-pattern: var(--clr-top-bg-pattern-light);
+    --clr-card-bg: var(--clr-card-bg-light);
+    --clr-text-gray: var(--clr-text-gray-light);
+    --clr-text: var(--clr-text-light);
+    --clr-toggle: var(--clr-toggle-light);
+  }
 }

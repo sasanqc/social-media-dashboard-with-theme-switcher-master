@@ -1,0 +1,41 @@
+:root {
+  --font-family: "Inter", sans-serif;
+  --fs-default: 1.4rem;
+
+  --clr-primary-lime-green: hsl(163, 72%, 41%);
+  --clr-primary-bright-red: hsl(356, 69%, 56%);
+  --clr-primary-facebook: hsl(208, 92%, 53%);
+  --clr-primary-twitter: hsl(203, 89%, 53%);
+  --clr-primary-instagram: linear-gradient(
+    225deg,
+    #df4896 0%,
+    #ee877e 50.91%,
+    #fdc366 100%
+  );
+  --clr-primary-youtube: hsl(348, 97%, 39%);
+
+  --clr-toggle-dark: linear-gradient(225deg, #40db82 0%, #388fe7 98.02%);
+  --clr-toggle-light: hsl(230, 22%, 74%);
+  --clr-toggle: var(--clr-toggle-dark);
+
+  // #### Dark Theme
+
+  --clr-bg-dark: hsl(230, 17%, 14%);
+  --clr-top-bg-pattern-dark: hsl(232, 19%, 15%);
+  --clr-card-bg-dark: hsl(228, 28%, 20%);
+  --clr-text-gray-dark: hsl(228, 34%, 66%);
+  --clr-text-dark: hsl(0, 0%, 100%);
+
+  // #### Light Theme
+  --clr-bg-light: hsl(0, 0%, 100%);
+  --clr-top-bg-pattern-light: hsl(225, 100%, 98%);
+  --clr-card-bg-light: hsl(227, 47%, 96%);
+  --clr-text-gray-light: hsl(228, 12%, 44%);
+  --clr-text-light: hsl(230, 17%, 14%);
+
+  --clr-bg: var(--clr-bg-dark);
+  --clr-top-bg-pattern: var(--clr-top-bg-pattern-dark);
+  --clr-card-bg: var(--clr-card-bg-dark);
+  --clr-text-gray: var(--clr-text-gray-dark);
+  --clr-text: var(--clr-text-dark);
+}

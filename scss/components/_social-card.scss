@@ -4,7 +4,7 @@
   width: 25.5rem;
   border-radius: 5px;
   position: relative;
-  background-color: $clr-card-bg-dark;
+  background-color: var(--clr-card-bg);
   display: flex;
   flex-direction: column;
   &::before {
@@ -20,21 +20,21 @@
   }
 
   &[data-social="facebook"]::before {
-    background: $clr-primary-facebook;
+    background: var(--clr-primary-facebook);
   }
 
   &[data-social="facebook"] {
-    border-top-color: $clr-primary-facebook;
+    border-top-color: var(--clr-primary-facebook);
   }
   &[data-social="instagram"]::before {
-    background: $clr-primary-instagram;
+    background: var(--clr-primary-instagram);
   }
 
   &[data-social="twitter"]::before {
-    background: $clr-primary-twitter;
+    background: var(--clr-primary-twitter);
   }
   &[data-social="youtube"]::before {
-    background: $clr-primary-youtube;
+    background: var(--clr-primary-youtube);
   }
 
   &[data-social="facebook"] &__id::before {
@@ -53,7 +53,7 @@
 
   &__id {
     margin-top: 3.2rem;
-    color: $clr-text-gray-dark;
+    color: var(--clr-text-gray-dark);
     @include flex-cc;
     margin-bottom: 2.8rem;
     &::before {
@@ -69,10 +69,10 @@
     margin-bottom: 2.4rem;
     display: inline-block;
     &[data-dir="up"] {
-      color: $clr-primary-lime-green;
+      color: var(--clr-primary-lime-green);
     }
     &[data-dir="down"] {
-      color: $clr-primary-bright-red;
+      color: var(--clr-primary-bright-red);
     }
     &[data-dir]::before {
       font-size: 0.8rem;
@@ -91,7 +91,7 @@
   .body {
     letter-spacing: 5px;
     text-transform: uppercase;
-    color: $clr-text-gray-dark;
+    color: var(--clr-text-gray-dark);
     margin-bottom: 2.5rem;
   }
 

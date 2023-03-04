@@ -1,6 +1,6 @@
 @use "../abstracts/" as *;
 .overview-card {
-  background-color: $clr-card-bg-dark;
+  background-color: var(--clr-card-bg);
   width: 25.5rem;
   border-radius: 5px;
   padding: 2.4rem;
@@ -9,16 +9,16 @@
   }
   &__event {
     margin-bottom: 2.4rem;
-    color: $clr-text-gray-dark;
+    color: var(--clr-text-gray);
   }
   &__up {
-    color: $clr-primary-lime-green;
+    color: var(--clr-primary-lime-green);
     &::before {
       content: "\25B2";
     }
   }
   &__down {
-    color: $clr-primary-bright-red;
+    color: var(--clr-primary-bright-red);
     &::before {
       content: "\25BC";
     }

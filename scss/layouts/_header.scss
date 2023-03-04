@@ -9,9 +9,8 @@
 
   &__toggle {
     @include flex-cc;
-
     .heading-xs {
-      color: $clr-text-gray-dark;
+      color: var(--clr-text-gray);
       margin-right: 1.3rem;
     }
   }
@@ -24,8 +23,7 @@
     &__toggle {
       justify-content: space-between;
       padding-top: 2rem;
-      border-top: 2px solid $clr-card-bg-dark;
-
+      border-top: 2px solid var(--clr-card-bg);
       .heading-xs {
         margin-right: unset;
       }

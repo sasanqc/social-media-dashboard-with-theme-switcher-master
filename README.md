@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Frontend Mentor | Social media dashboard with theme switcher](https://your-solution-url.com)
-- Live Site URL: [Social media dashboard with theme switcher](https://your-live-site-url.com)
+- Live Site URL: [Social media dashboard with theme switcher](https://inquisitive-llama-981507.netlify.app/)
 
 ## My process
 
